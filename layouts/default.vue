@@ -15,7 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
-  color: #2E495E;
+  background-color: rgb(183 183 183);
 }
 
 *,
@@ -27,9 +27,7 @@ html {
 
 .container {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
 }
 </style>

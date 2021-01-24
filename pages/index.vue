@@ -1,25 +1,20 @@
 <template>
-  <section>
+  <section class="hero">
     <svg
-      id="curve"
-      viewBox="0 0 512 636"
-      version="1.1"
+      class="curve"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      xml:space="preserve"
-      xmlns:serif="http://www.serif.com/"
+      width="100"
+      height="100"
+      viewBox="0 0 256 318"
     >
-      <g transform="matrix(1,0,0,1,-2521,-3277)">
-        <g transform="matrix(1,0,0,1,-773.326,3277.85)">
-          <g transform="matrix(1,0,0,1,884.365,-228)">
-            <path
-              d="M2415.4,228C2415.4,228 2390.49,290.391 2448.98,306.16C2507.46,321.93 2520.04,321.659 2534.64,373.31C2549.23,424.96 2505.1,423.11 2534.64,484.121C2564.18,545.133 2621.83,505.984 2666.05,571.148C2690.47,607.14 2686.69,668.301 2749.61,679.45C2822.72,692.403 2817.44,728.841 2814.11,760.058C2803.32,861.11 2882.7,835.81 2909.64,862.159C2936.57,888.508 2909.64,228 2909.64,228L2415.4,228Z"
-            />
-          </g>
-        </g>
-      </g>
+      <path
+        d="M2.7 0.4c0 0-12.5 31.2 16.8 39.1 29.2 7.9 35.5 7.8 42.8 33.6 7.3 25.8-14.8 24.9 0 55.4 14.8 30.5 43.6 10.9 65.7 43.5 12.2 18 10.3 48.6 41.8 54.2 36.6 6.5 33.9 24.7 32.2 40.3 -5.4 50.5 34.3 37.9 47.8 51.1 13.5 13.2 0-317.1 0-317.1l-247.1 0Z"
+        class="b"
+      />
     </svg>
-    <div class="title">Title</div>
+
+    <div class="square"></div>
+    <div class="title">Title1</div>
     <div class="subtitle">Subtitle</div>
   </section>
 </template>
@@ -37,21 +32,22 @@ export default {
 </script>
 
 <style scoped>
+
+
 .title {
+  display: absolute;
+  top: 120px;
   font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  display: block;
   font-weight: 400;
   font-size: 100px;
   color: #2E495E;
   letter-spacing: 1px;
   font-size: 6em;
 }
-.green {
-  color: #00C48D;
-}
 
 .subtitle {
+  top: 240px;
   font-weight: 300;
   font-size: 3em;
   color: #2E495E;
@@ -63,17 +59,18 @@ export default {
   padding-top: 15px;
 }
 
-.section {
+body {
   position: relative;
   margin: 0;
   padding: 0;
-  background: #8d8d8d;
+  background-color: #8d8d8d;
   width: 100%;
   height: 100%;
 }
-#curve {
-  width: 100%;
-  height: 50%;
-  fill: rgb(247, 239, 219);
+.curve {
+  width: 25%;
+  height: 25%;
+  float: right;
+  fill: rgb(191 191 61);
 }
 </style>
