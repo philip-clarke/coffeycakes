@@ -16,6 +16,9 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   background-color: rgb(183 183 183);
+  background-image: url("https://via.placeholder.com/150x200");
+  background-repeat: no-repeat;
+  background-position:0 100%
 }
 
 *,
