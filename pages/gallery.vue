@@ -21,9 +21,10 @@ export default {
 
 <style>
 .item {
-  width: 150px;
-  height: 200px;
+  width: 200px;
+  height: 300px;
   background-color: aqua;
+  background-image: url("https://via.placeholder.com/200x300");
   margin: 10px 10px;
   border: 1px solid red;
   flex-shrink: 0;
