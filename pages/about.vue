@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <div>
-      <h1>Hello from <span class="name">{{ name }}</span>.</h1>
+      <h1>
+        Hello from <span class="name">{{ name }}</span
+        >.
+      </h1>
       <p><NLink to="/" class="button--grey">Back home</NLink></p>
     </div>
   </div>
@@ -9,12 +12,13 @@
 
 <script>
 export default {
+  layout: "gallery",
   asyncData() {
     return {
-      name: (process.server ? 'server' : 'client')
-    }
-  }
-}
+      name: process.server ? "server" : "client",
+    };
+  },
+};
 </script>
 
 <style scoped>
